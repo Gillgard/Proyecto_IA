@@ -1,10 +1,6 @@
 <h1>Películas <small>Saga de Star Wars</small></h1>
 <hr>
 
-
-<div class="card-columns">
-
-  <app-pelicula-tarjeta (peliculaSeleccionada)="verPelicula( $event )" [pelicula]="foo" [index]="i"  *ngFor="let foo of peliculas; let i = index"></app-pelicula-tarjeta>
-
-
+<div class="card-rows">
+  <app-pelicula-tarjeta></app-pelicula-tarjeta>
 </div>

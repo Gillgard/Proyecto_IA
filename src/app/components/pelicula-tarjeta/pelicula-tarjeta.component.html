@@ -1,12 +1,200 @@
-<div class="card animated fadeIn fast" >
-  <img class="card-img-top img-fluid" [src]="pelicula.img" [alt]="pelicula.nombre">
-  <div class="card-body">
-    <h4 class="card-title">{{ pelicula.nombre }}</h4>
-    <p class="card-text"><small class="text-muted">{{ pelicula.aparicion }}</small></p>
+<div xmlns="http://www.w3.org/1999/xhtml"
+prefix="
+  : http://example.org/ontology#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#" typeof="Pelicula">
 
-    <button (click)="verPelicula()"
-      type="button" class="btn btn-outline-primary btn-block">
-      Ver más...
-    </button>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-tfm.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode I - The Phantom Menace</h5>
+          <p property="bio">Obi-Wan Kenobi es un joven aprendiz caballero Jedi bajo la tutela de Qui-Gon Jinn; Anakin Skywalker, quien después será padre de Luke Skywalker y se convertirá en Darth Vader, solamente es un niño de 9 años. Cuando la Federación de Comercio corta todas las rutas al planeta Naboo, Qui-Gon y Obi-Wan son asignados para solucionar el problema.</p>          
+          <p property="aparicion"><small class="text-muted">1999-05-19</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
   </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-aotc.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode II - Attack of the Clones</h5>
+          <p property="bio">En el Senado Galáctico reina la inquietud. Varios miles de sistemas solares han declarado su intención de abandonar la República. La reina Amidala regresa al Senado para conseguir un ejército que ayude a los caballeros jedi.</p>          
+          <p property="aparicion"><small class="text-muted">2002-05-16</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-tcw.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: The Clone Wars</h5>
+          <p property="bio">El Ejército de la República, encabezada por los Jedi, lucha contra ejércitos de androides a lo largo y ancho de la galaxia.</p>          
+          <p property="aparicion"><small class="text-muted">2008-08-10</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-rots.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode III - Revenge of the Sith</h5>
+          <p property="bio">Seducido por el lado oscuro, Anakin Skywalker se rebela contra su mentor, Obi-Wan Kenobi, y se convierte en Darth Vader.</p>          
+          <p property="aparicion"><small class="text-muted">2008-08-10</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-solo.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Solo: A Star Wars Story</h5>
+          <p property="bio">El joven Han Solo y su banda de contrabandistas pretenden robar coaxium del planeta Kessel. Dado que necesita una nave muy rápida para la misión, Solo contacta con Lando Calrissian, el propietario del Halcón Milenario.</p>          
+          <p property="aparicion"><small class="text-muted">2018-05-25</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-rogue.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Rogue One: A Star Wars Story</h5>
+          <p property="bio">El Imperio va a construir una estación espacial capaz de destruir planetas, conocida como la Estrella de la Muerte. Los rebeldes, conocedores de esto, se embarcan en una misión extraordinaria: robar los planos y sabotear la estación.</p>          
+          <p property="aparicion"><small class="text-muted">2016-12-15</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-anh.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode IV - A New Hope</h5>
+          <p property="bio">La nave en la que viaja la princesa Leia es capturada por las tropas imperiales al mando del temible Darth Vader. Antes de ser atrapada, Leia consigue introducir un mensaje en su robot R2-D2, quien acompañado de su inseparable C-3PO logra escapar. Tras aterrizar en el planeta Tattooine son capturados y vendidos al joven Luke Skywalker, quien descubrirá el mensaje oculto que va destinado a Obi Wan Kenobi, maestro Jedi a quien Luke debe encontrar para salvar a la princesa.</p>          
+          <p property="aparicion"><small class="text-muted">1997-05-25</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-tesb.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode V - The Empire Strikes Back</h5>
+          <p property="bio">Aunque la Estrella de la Muerte ha sido destruida, las tropas imperiales han hecho salir a las fuerzas rebeldes de sus bases ocultas y los persiguen a través de la galaxia. Mientras, el grupo de rebeldes de Skywalker se esconde en un planeta helado.</p>          
+          <p property="aparicion"><small class="text-muted">1980-05-17</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-rttj.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode VI - Return of the Jedi</h5>
+          <p property="bio">Luke Skywalker, ahora un experimentado caballero Jedi, intenta descubrir la identidad de Darth Vader.</p>          
+          <p property="aparicion"><small class="text-muted">1983-05-25</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-tfa.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode VII - The Force Awakens</h5>
+          <p property="bio">Treinta años después de haber derrotado al Imperio, una nueva amenaza se cierne sobre la República. El terrible y enigmático guerrero Kylo Ren ha reunido un ejército de leales al Imperio, que se hace llamar la Primera Orden y ataca a la Alianza. La única esperanza para la galaxia es que una recogedora de chatarra, un stromtrooper fugado y un androide llamado BB-8 logren encontrar a tiempo al legendario jedi Luke Skywalker.</p>          
+          <p property="aparicion"><small class="text-muted">2015-12-18</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-tlj.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode VIII - The Last Jedi</h5>
+          <p property="bio">La Primera Orden ha acorralado a los últimos miembros de la resistencia. Su última esperanza es que Finn se introduzca en la nave de Snoke y desactive el radar que les permite localizarlos. Mientras él trata, en compañía de una soldado de la Resistencia, de cumplir esta misión imposible, Rey se encuentra lejos, intentando convencer a Luke Skywalker de que la entrene y la convierta en la última jedi.</p>          
+          <p property="aparicion"><small class="text-muted">2017-12-15</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card animated fadeIn fast">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img class="card-img" property="image" src="assets/img/SW-tros.jpg"/>
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 property="nombre">Star Wars: Episode IX - The Rise of Skywalker</h5>
+          <p property="bio">La Resistencia sobreviviente se enfrenta a la Primera Orden, y Rey, Finn, Poe y el resto de los héroes encararán nuevos retos y una batalla final con la sabiduría de las generaciones anteriores.</p>          
+          <p property="aparicion"><small class="text-muted">2019-12-16</small></p>
+          <span property="casa">Lucasfilm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
 </div>
+
