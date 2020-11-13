@@ -1,0 +1,27 @@
+<h1 class="animated fadeIn">{{ pelicula.nombre | uppercase }} <small>({{ pelicula.aparicion | date:'y' }})</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+  <div class="col-md-4">
+
+    <img [src]="pelicula.img" class="img-fluid" [alt]="pelicula.nombre">
+    <br><br>
+    <a [routerLink]="['/peliculas']" class="btn btn-outline-danger btn-block">Regresar</a>
+
+  </div>
+
+  <div class="col-md-8">
+    <h3>{{ pelicula.nombre }}</h3>
+    <hr>
+    <p>
+      {{ pelicula.bio }}
+    </p>
+    <div>
+      <img *ngIf="pelicula.casa == 'Lucasfilm'" class="img-logo" src="assets/img/lucasfilm-logo.png">
+    </div>
+
+
+  </div>
+
+</div>
